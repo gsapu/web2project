@@ -205,6 +205,7 @@ $htmlHelper = new w2p_Output_HTMLHelper($AppUI);
     <strong><?php echo $AppUI->_('Assigned Users'); ?></strong>
     <table cellspacing="1" cellpadding="2" border="0" width="100%" class="well">
         <?php
+        // this needs to be updated, it does not show assigned users
         $s = count($users) == 0 ? '<tr><td bgcolor="#ffffff">' . $AppUI->_('none') . '</td></tr>' : '';
         foreach ($users as $row) {
             $s .= '<tr>';
